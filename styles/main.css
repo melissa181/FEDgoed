@@ -1,0 +1,29 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  /* startje */
+  --color-text1: #222222;
+  --color-text2: #FFFFFF;
+  --color-background1: #E7E5D8;
+  --color-background2: #779fb3;
+  --color-background3: #D6D3C0;
+
+
+}
+
+main section ul li img:nth-of-type(1){
+   width: 10em;
+   height: 5em;
+
+}
