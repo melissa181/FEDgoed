@@ -18,12 +18,5 @@
   --color-background1: #E7E5D8;
   --color-background2: #779fb3;
   --color-background3: #D6D3C0;
-
-
-}
-
-main section ul li img:nth-of-type(1){
-   width: 10em;
-   height: 5em;
-
+  --color-background4: #f1c9c7;
 }
