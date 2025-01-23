@@ -1,0 +1,835 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url(../images/bg_mofu.png);
+}
+
+@media (max-width: 769px) {
+
+  main section:nth-of-type(1) ul {
+    padding: 10px 16px;
+    list-style: none;
+  }
+
+  main section:nth-of-type(1) ul li {
+    display: inline;
+    font-size: 18px;
+  }
+
+  main section:nth-of-type(1) ul li+li:before {
+    padding: 8px;
+    content: "/\00a0";
+  }
+
+  main section:nth-of-type(1) ul li a {
+    text-decoration: none;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: small;
+    font-weight: 400;
+  }
+
+  main section:nth-of-type(1) ul li a:hover {
+    color: var(--colorhover7);
+    text-decoration: underline;
+  }
+
+  /* ------------------product------------------ */
+
+  main section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    height: 68em;
+    background-color: var(--color-text2);
+    border-radius: 0.5em;
+  }
+
+  main section:nth-of-type(2) img {
+    padding: 1em;
+  }
+
+  main section:nth-of-type(2) h2 {
+    text-align: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: var(--outof-color);
+  }
+
+  main section:nth-of-type(2) h3 {
+    display: grid;
+    justify-self: start;
+    text-align: start;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 1em;
+  }
+
+  main section:nth-of-type(2) h4 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
+    margin: 2em;
+    padding: 0;
+  }
+
+  section:nth-of-type(2) ul {
+    display: grid;
+    justify-self: center;
+    text-align: center;
+    margin: 1em;
+    padding: 0;
+  }
+
+  section:nth-of-type(2) ul li {
+    list-style: none;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+
+  section:nth-of-type(2) a {
+    background-color: var(--color-background2);
+    color: var(--linecolor, #FFFFFF);
+    display: grid;
+    font-size: medium;
+    border-radius: 0.2em;
+    text-decoration: none;
+    margin-inline: auto;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0.7em;
+    width: 16em;
+    height: 3em;
+    text-align: center;
+    justify-self: center;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(2) {
+    display: grid;
+    text-align: start;
+    margin: 1em;
+    padding: 0;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(2) li {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: small;
+    font-weight: 400;
+    padding: 0.5em;
+    margin: 0;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em;
+    margin: 0;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(1) img {
+    width: 5em;
+    grid-column: 2;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) img {
+    width: 5em;
+    grid-column: 3;
+  }
+
+  /* ----------checked--------------- */
+  section:nth-of-type(3) {
+    background-color: var(--color-text2);
+    padding: 3em;
+    gap: 2em;
+  }
+  
+  section:nth-of-type(3) h2 {
+    text-align: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+  
+  section:nth-of-type(3) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 2.5em;
+  }
+  
+  section:nth-of-type(3) li {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    padding: 1em;
+  }
+  
+  section:nth-of-type(3) ul li img {
+    width: 10em;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+  }
+  
+  section:nth-of-type(3) h3 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  section:nth-of-type(3) h4 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: right;
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  /* ---------------------recommende--------------- */
+
+  section:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    padding-bottom: 3em;
+  }
+  
+  section:nth-of-type(4) h2 {
+    text-align: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding: 1em;
+  }
+  
+  section:nth-of-type(4) h3 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  section:nth-of-type(4) h4 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: right;
+    margin: 0;
+    padding: 0.5em;
+  }
+  
+  section:nth-of-type(4) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    gap: 0.5em;
+  }
+  
+  section:nth-of-type(4) li {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    padding: 0.5em;
+    gap: 0.5em;
+  }
+  
+  section:nth-of-type(4) ul li img {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+  }
+  
+  section:nth-of-type(4) ul li {
+    background-color: var(--color-text2);
+    border-radius: 10px;
+  
+  }
+
+  section:nth-of-type(4) a:nth-of-type(1) {
+    background-color: var(--color-background2);
+    color: var(--linecolor, #FFFFFF);
+    display: grid;
+    place-items: center;
+    font-size: medium;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-inline: auto;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    width: 11em;
+    height: 2.8em;
+    text-align: center;
+    margin: 2em;
+  }
+
+  /* ----------------information------------------ */
+
+section:nth-of-type(5) {
+  background-color: var(--color-background3);
+  padding: 2em;
+  height: 40em;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  background-color: var(--color-text2);
+  border-radius: 10px;
+  width: 15em;
+  padding: 2em;
+  border: 1px solid var(--color-info6);
+}
+
+section:nth-of-type(5) h2 {
+  margin: 0.5em;
+  text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+section:nth-of-type(5) ul {
+  display: grid;
+  justify-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1em;
+}
+
+section:nth-of-type(5) ul li {
+  display: grid;
+  max-width: fit-content;
+  border-bottom: 1px solid var(--color-info6);
+  list-style: none;
+  justify-self: center;
+  width: 100%;
+}
+
+section:nth-of-type(5) ul li a {
+  text-decoration: none;
+}
+
+section:nth-of-type(5) ul li p {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  line-height: 1.6;
+  font-size: small;
+  padding: 0.5em;
+  text-align: start;
+  margin: 0 auto;
+}
+
+/* ------------------instagram---------------------- */
+
+section:nth-of-type(6) h2 {
+  padding: 1em;
+  text-align: center;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+section:nth-of-type(6) div {
+  width: 22em;
+}
+
+section:nth-of-type(6) {
+  background-color: var(--color-background3);
+  padding: 3em;
+}
+
+section:nth-of-type(6) ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+section:nth-of-type(6) ul li {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+section:nth-of-type(6) ul li img {
+  width: 5em;
+  height: auto;
+}
+
+/*--------------------- 4 image buttons---------------------------- */
+
+section:nth-of-type(7) {
+  background-color: var(--image-color);
+
+}
+
+section:nth-of-type(7) ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  list-style: none;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+section:nth-of-type(7) img {
+  width: 40vw;
+}
+}
+
+
+
+@media (min-width: 770px) {
+
+  /* breadcrumbs */
+  main section:nth-of-type(1) ul {
+    padding: 10px 16px;
+    list-style: none;
+  }
+
+  main section:nth-of-type(1) ul li {
+    display: inline;
+    font-size: 18px;
+  }
+
+  main section:nth-of-type(1) ul li+li:before {
+    padding: 8px;
+    content: "/\00a0";
+  }
+
+  main section:nth-of-type(1) ul li a {
+    text-decoration: none;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: small;
+    font-weight: 400;
+  }
+
+  main section:nth-of-type(1) ul li a:hover {
+    color: var(--colorhover7);
+    text-decoration: underline;
+  }
+
+  /* ---------------product---------------- */
+
+  main section:nth-of-type(2) {
+    display: grid;
+    justify-self: center;
+    margin: 1em;
+    height: 68em;
+    background-color: var(--color-text2);
+    border-radius: 0.5em;
+  }
+
+  main section:nth-of-type(2) img {
+    justify-self: center;
+    padding: 2em;
+    width: 30em;
+  }
+
+  main section:nth-of-type(2) h2 {
+    text-align: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: var(--outof-color);
+  }
+
+  main section:nth-of-type(2) h3 {
+    display: grid;
+    justify-self: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 1em;
+  }
+
+  main section:nth-of-type(2) h4 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
+    margin: 2em;
+    padding: 0;
+  }
+
+  section:nth-of-type(2) ul {
+    display: grid;
+    justify-self: center;
+    text-align: center;
+    margin: 1em;
+    padding: 0;
+  }
+
+  section:nth-of-type(2) ul li {
+    list-style: none;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+
+  section:nth-of-type(2) a {
+    background-color: var(--color-background2);
+    color: var(--linecolor, #FFFFFF);
+    display: grid;
+    font-size: medium;
+    border-radius: 0.2em;
+    text-decoration: none;
+    margin-inline: auto;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0.7em;
+    width: 16em;
+    height: 3em;
+    text-align: center;
+    justify-self: center;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(2) {
+    display: grid;
+    text-align: start;
+    margin: 1em;
+    padding: 0;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(2) li {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: small;
+    font-weight: 400;
+    padding: 0.5em;
+    margin: 0;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em;
+    margin: 0;
+    justify-self: start;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(1) img {
+    width: 8em;
+  }
+
+  section:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) img {
+    width: 8em;
+  }
+
+  /* -------------------checked ------------------- */
+
+  section:nth-of-type(3) {
+    background-color: var(--color-text2);
+    padding: 3em;
+    gap: 2em;
+  }
+
+  section:nth-of-type(3) h2 {
+    text-align: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding: 1em;
+  }
+
+  section:nth-of-type(3) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 2.5em;
+  }
+
+  section:nth-of-type(3) li {
+    display: grid;
+    padding: 1em;
+  }
+
+  section:nth-of-type(3) li:nth-child(1) {
+    grid-column: 2;
+  }
+
+  section:nth-of-type(3) li:nth-child(2) {
+    grid-column: 3;
+  }
+
+  section:nth-of-type(3) ul li img {
+    width: 13em;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    justify-self: center;
+  }
+
+  section:nth-of-type(3) h3 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  section:nth-of-type(3) h4 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: right;
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  /* -------------------------recommended--------------------------- */
+
+  section:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    padding-bottom: 3em;
+    height: 39em;
+  }
+
+  section:nth-of-type(4) h2 {
+    text-align: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding: 1em;
+  }
+
+  section:nth-of-type(4) h3 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  section:nth-of-type(4) h4 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: right;
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  section:nth-of-type(4) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    padding: 1em;
+    gap: 0.8em;
+    width: 60%;
+    max-width: 40em;
+    margin: 0 auto;
+  }
+
+  section:nth-of-type(4) li:nth-child(1) {
+    grid-column: 2;
+  }
+
+  section:nth-of-type(4) li:nth-child(2) {
+    grid-column: 3;
+  }
+
+  section:nth-of-type(4) li {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    padding: 0.5em;
+    gap: 0.5em;
+  }
+
+  section:nth-of-type(4) ul li img {
+    width: 13em;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    justify-self: center;
+  }
+
+  section:nth-of-type(4) ul li {
+    background-color: var(--color-text2);
+    border-radius: 10px;
+
+  }
+
+  
+  section:nth-of-type(4) a:nth-of-type(1) {
+    background-color: var(--color-background2);
+    color: var(--linecolor, #FFFFFF);
+    display: grid;
+    place-items: center;
+    font-size: medium;
+    border-radius: 3em;
+    text-decoration: none;
+    margin-inline: auto;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0.7em;
+    width: 11.3em;
+    height: 5em;
+    text-align: center;
+    margin: 2em;
+  }
+
+  /* -------------------information------------------- */
+
+  section:nth-of-type(5) {
+    background-color: var(--color-background3);
+    padding: 2em;
+    height: 40em;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    background-color: var(--color-text2);
+    border-radius: 10px;
+    width: 15em;
+    padding: 2em;
+    border: 1px solid var(--color-info6);
+  }
+
+  section:nth-of-type(5) h2 {
+    margin: 0.5em;
+    text-align: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
+
+  section:nth-of-type(5) ul {
+    display: grid;
+    justify-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1em;
+  }
+
+  section:nth-of-type(5) ul li {
+    display: grid;
+    max-width: fit-content;
+    border-bottom: 1px solid var(--color-info6);
+    list-style: none;
+    justify-self: center;
+    width: 100%;
+  }
+
+  section:nth-of-type(5) ul li a {
+    text-decoration: none;
+  }
+
+  section:nth-of-type(5) ul li p {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    line-height: 1.6;
+    font-size: small;
+    padding: 0.5em;
+    text-align: start;
+    margin: 0 auto;
+  }
+
+  /* ----------------------instagram-------------------- */
+
+  section:nth-of-type(6) h2 {
+    padding: 1em;
+    text-align: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
+
+  section:nth-of-type(6) div {
+    width: 22em;
+  }
+
+  section:nth-of-type(6) {
+    background-color: var(--color-background3);
+    padding: 3em;
+  }
+
+  section:nth-of-type(6) ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  section:nth-of-type(6) ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  section:nth-of-type(6) ul li img {
+    width: 5em;
+    height: auto;
+  }
+
+
+  /* --------------------4 images------------------- */
+
+  section:nth-of-type(7) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    justify-self: center;
+    gap: 1.5em;
+    padding: 1em;
+    background-color: var(--color-background3);
+    width: 100%;
+  }
+
+  section:nth-of-type(7) img {
+    width: 20vw;
+  }
+
+
+}
